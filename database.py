@@ -1,7 +1,7 @@
 
 import sqlalchemy as db
 DATABASE_NAME = 'Pythagoras.db'
-TABLE_NAME = 'general_info'
+TABLE_NAME = 'different_info'
 engine = db.create_engine(f'sqlite:///{DATABASE_NAME}')
 
 connection = engine.connect()

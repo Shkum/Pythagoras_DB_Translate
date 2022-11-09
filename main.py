@@ -27,4 +27,5 @@ for i in range(len(db_info)):
             values(info_ua=res_UA)
     connection.execute(update_query)
     print(f"{db_info[i]['name']} - done ...")
+connection.close()
 

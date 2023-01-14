@@ -14,7 +14,7 @@ class GoogleTranslate:
     def get_translated(self, fromlang, tolang):
         translator = Translator()
         result = translator.translate(self.text, src=fromlang, dest=tolang)
-        return result.text
+        return result.text.replace("'", '&apos;').replace('\n', '<br>').replace('\r', '')
 
 
 
